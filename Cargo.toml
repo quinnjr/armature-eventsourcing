@@ -1,23 +1,23 @@
 [package]
 name = "armature-eventsourcing"
-version = "0.3.0"
-edition.workspace = true
-rust-version.workspace = true
-authors.workspace = true
-license.workspace = true
+version = "0.3.2"
+edition = "2024"
+rust-version = "1.94.1"
+authors = ["Joseph Quinn <quinn.josephr@proton.me>"]
+license = "Apache-2.0"
 repository = "https://github.com/quinnjr/armature-eventsourcing"
-homepage.workspace = true
+homepage = "https://quinnjr.github.io/armature"
 description = "Event sourcing implementation for Armature"
 keywords = ["event-sourcing", "events", "cqrs", "aggregate"]
 categories = ["web-programming", "data-structures"]
 
 [dependencies]
-armature-events = { path = "../armature-events", version = "0" }
-tokio = { version = "1.52", features = ["rt", "rt-multi-thread", "macros", "sync", "time"] }
+armature-events = { version = "0.3" }
+tokio = { version = "1.53", features = ["rt", "rt-multi-thread", "macros", "sync", "time"] }
 async-trait = "0.1"
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
-uuid = { version = "1.23", features = ["v4", "serde"] }
+uuid = { version = "1.26", features = ["v4", "serde"] }
 chrono = { version = "0.4", features = ["serde"] }
 thiserror = "2.0"
 dashmap = "6.2"
