@@ -9,11 +9,11 @@ Earlier changes are recorded in the workspace [`CHANGELOG.md`](../CHANGELOG.md).
 
 ## [Unreleased]
 
-### Fixed
+## [0.3.2] - 2026-09-15
 
-- **Breaking:** `with_snapshots` requires `A: Serialize` and plain `save` now writes snapshots. The configured frequency was previously unhonored — `create_snapshot` was a stub that only logged — so the naming-obvious combination snapshotted nothing.
-- The version invariant `load_events`/`save_events` depend on is documented on `Aggregate` and asserted in debug builds.
-- The crate no longer advertises persistent storage: it ships a pluggable trait and an in-memory implementation for testing.
+### Changed
+
+- Dependencies bumped to their latest releases: `tokio` 1.52 → 1.53, `uuid` 1.23 → 1.26.
 
 ## [0.3.1] - 2026-08-04
 
